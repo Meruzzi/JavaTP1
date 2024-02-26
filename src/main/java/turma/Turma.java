@@ -23,12 +23,12 @@ public class Turma {
 
     public void AdicionarAluno(Aluno aluno) {
         if(!aluno.vefDiscMatriculado()) {
-            System.out.println("Numero maximo de turmas matriculadas excedido.");
+            System.out.println("Numero máximo de turmas matriculadas excedido.");
         } else {
             for (var i = 0; i < Alunos.length; i++) {
                 if(Alunos[i] == null) {
                     Alunos[i] = aluno;
-                    System.out.println("Aluno adicionado com sucesso.");
+                    System.out.println("Aluno adicionado com sucesso!");
                     return;
                 }
             }
